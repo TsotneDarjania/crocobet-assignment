@@ -17,4 +17,10 @@ export class AppComponent implements OnInit {
       console.log(this.users);
     });
   }
+
+  showDetails(userId: number): void {
+    // Implement your logic here, e.g., navigate to the user details page
+    // You can use Angular's Router to navigate
+    console.log('Showing details for user with ID:', userId);
+  }
 }
