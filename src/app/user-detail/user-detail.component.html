@@ -1,0 +1,23 @@
+<div class="user-details" *ngIf="user">
+  <div class="center-container">
+    <h2>User Details</h2>
+    <p>Name: {{ user.name }}</p>
+    <p>Username: {{ user.username }}</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Phone: {{ user.phone }}</p>
+    <p>Website: {{ user.website }}</p>
+
+    <h3>Address:</h3>
+    <p>Street: {{ user.address.street }}</p>
+    <p>Suite: {{ user.address.suite }}</p>
+    <p>City: {{ user.address.city }}</p>
+    <p>Zip Code: {{ user.address.zipcode }}</p>
+
+    <h3>Company:</h3>
+    <p>Company Name: {{ user.company.name }}</p>
+    <p>Catch Phrase: {{ user.company.catchPhrase }}</p>
+    <p>Business: {{ user.company.bs }}</p>
+
+    <button (click)="goToUserPosts()">User Posts</button>
+  </div>
+</div>

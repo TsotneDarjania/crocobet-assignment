@@ -1,18 +1,3 @@
-<div class="app-root">
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Details</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let user of users">
-        <td>{{ user.name }}</td>
-        <td>{{ user.email }}</td>
-        <td><button (click)="showDetails(user.id)">Details</button></td>
-      </tr>
-    </tbody>
-  </table>
+<div>
+  <router-outlet></router-outlet>
 </div>

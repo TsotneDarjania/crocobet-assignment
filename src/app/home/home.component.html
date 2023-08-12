@@ -1,0 +1,19 @@
+<div class="home">
+  <table>
+    <thead>
+      <tr>
+        <th>სახელი</th>
+        <th>მეილი</th>
+        <th>დეტალები</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td><button (click)="showDetails(user.id)">დეტალურად</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <router-outlet></router-outlet>
+</div>
