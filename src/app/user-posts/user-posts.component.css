@@ -1,0 +1,32 @@
+/* user-posts.component.css */
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.user-posts {
+  max-width: 80%;
+  height: 70vh;
+  text-align: center;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #333;
+}
+
+.card p {
+  margin-top: 5px;
+  color: #555;
+}

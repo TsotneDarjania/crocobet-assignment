@@ -16,7 +16,6 @@ export class HomeComponent implements OnInit {
     this.apiService.getUsers().subscribe((users) => {
       this.users = users;
     });
-    console.log('aaa');
   }
 
   showDetails(userId: number): void {

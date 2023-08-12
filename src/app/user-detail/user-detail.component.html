@@ -1,5 +1,5 @@
 <div class="user-details" *ngIf="user">
-  <div class="center-container">
+  <div class="content">
     <h2>User Details</h2>
     <p>Name: {{ user.name }}</p>
     <p>Username: {{ user.username }}</p>
@@ -18,6 +18,6 @@
     <p>Catch Phrase: {{ user.company.catchPhrase }}</p>
     <p>Business: {{ user.company.bs }}</p>
 
-    <button (click)="goToUserPosts()">User Posts</button>
+    <button (click)="goToUserPosts()">მომხმარებლის პოსტები</button>
   </div>
 </div>

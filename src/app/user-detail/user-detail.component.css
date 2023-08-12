@@ -1,13 +1,22 @@
 .user-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #383838;
+}
+
+.content {
   text-align: center;
-  max-width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  width: 50%;
+  padding: 30px;
   border: 1px solid #ccc;
+  background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-  margin-top: 10%;
 }
 
 .user-details h2 {
@@ -39,16 +48,9 @@
   transform: scale(1.05);
 }
 
-/* Responsive Design */
-
-@media (max-width: 1024px) {
-  .user-details {
-    max-width: 50%;
-  }
-}
-
 @media (max-width: 768px) {
-  .user-details {
-    max-width: 80%;
+  .content {
+    width: 80%;
+    padding: 5px;
   }
 }
