@@ -1,15 +1,12 @@
-/* user-posts.component.css */
-
 .center-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .user-posts {
-  max-width: 80%;
-  height: 70vh;
+  max-width: 50%;
+  height: 100vh;
   text-align: center;
 }
 
@@ -29,4 +26,10 @@
 .card p {
   margin-top: 5px;
   color: #555;
+}
+
+@media (max-width: 1024px) {
+  .user-posts {
+    max-width: 80%;
+  }
 }
